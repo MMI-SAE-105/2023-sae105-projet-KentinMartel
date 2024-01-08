@@ -1,0 +1,21 @@
+:root {
+    --gray: #f9f8f2;
+    --gris: rgba(166, 166, 166, 1);
+    --gris-blanc: rgba(191, 191, 191, 1);
+    --white: rgba(251, 251, 251, 1);
+    --black: rgba(0, 0, 0, 1);
+    --title: 32px;
+    --site-titlte: 36px;
+    --sous-titre: 20px;
+    --titre-partie-accueil: 26px;
+    --footer: 13px;
+    --header-title: 24px;
+    --citation: 10px;
+    --niramit: 'Neucha';
+    --readex: 'Mulish';
+    --space1x: 10px;
+    --space2x: 20px;
+    --space3x: 40px;
+    --space4x: 80px;
+    --space5x: 120px;
+}

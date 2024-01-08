@@ -1,0 +1,66 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.footer__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 70px;
+    margin-left: 160px;
+    margin-top: 40px;
+}
+
+
+.footer__copy {
+    font-size: var(--footer);
+    color: var(--black);
+    font-family: var(--readex);
+    opacity: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+
+.footer__billetterie {
+    font-size: var(--footer);
+    color: var(--black);
+    font-family: var(--readex);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.footer__contact {
+    font-size: var(--footer);
+    color: var(--black);
+    font-family: var(--readex);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.footer__oeuvres {
+    font-size: var(--footer);
+    color: var(--black);
+    font-family: var(--readex);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19px;
+    flex-direction: column;
+    text-decoration: none;
+}

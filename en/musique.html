@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underrated</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+    </style>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<div class="color">
+
+
+    <body>
+        <div class="header">
+            <header class="active">
+                <a href="index.html"> <img class="logo-header" src="/src/assets/icones/curry-brand-3m 1.png"
+                        alt="logo"></a>
+
+                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__title">
+                    <img class="back__menu" x-show="menuIsOpen" src="/src/assets/icones/menu-closed.png" alt="">
+                    <img class="menu-burger" x-show="!menuIsOpen" src="/src/assets/icones/menu-open.png" alt="">
+                </button>
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
+                    <ul menu__ul>
+                        <li class="menu__item"><a class='menu__link' href='/fr/film.html'>Underrated, Le film</a></li>
+                        <li class="menu__item"><a class='menu__link' href='/fr/citation.html'>Citation Inspirante de
+                                Curry</a></li>
+                        <li class="menu__item"><a class='menu__link' href='/en/musique.html'>Musique & Basket</a></li>
+                        <li class="menu__item"><a class='menu__link' href='/en/realisateur.html'>Réalisateur du film</a>
+                        <li class="menu__item"><a class='menu__link' href='/fr/livre.html'>Livre sur Curry</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="intro">
+            <img class="image-oeuvre" src="/src/assets/img/sterp 1.png" alt="Image 2">
+            <p class="legende">Stephen Curry</p>
+        </div>
+        <div class="intro">
+            <main>
+                <h2 class="titre">UNDERRATED, LE film</h2>
+                <p class="texte-courant">Stephen Curry : Du Campus Universitaire à la Gloire de la NBA
+
+                    La carrière sportive de Stephen Curry est un conte de fées moderne qui a débuté sur les campus
+                    universitaires avant de
+                    s'épanouir dans la prestigieuse National Basketball Association (NBA).
+                    De ses années universitaires exceptionnelles à son ascension fulgurante en tant que superstar de la
+                    NBA, l'histoire de
+                    Stephen Curry est une source d'inspiration pour de nombreux fans de basketball et une démonstration
+                    de détermination, de
+                    travail acharné et de talent brut.
+                    Stephen Curry a fait ses débuts universitaires en 2006 en rejoignant l'Université de Davidson en
+                    Caroline du Nord. À
+                    l'époque, il n'était pas le choix le plus en vue des recruteurs, mais il allait rapidement changer
+                    la donne.</p>
