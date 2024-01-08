@@ -1,7 +1,7 @@
-- NOM : 
-- PRÉNOM :
-- URL du site :
-- URL FIGMA :
+- NOM : Martel
+- PRÉNOM : Kentin
+- URL du site : 
+- URL FIGMA : https://www.figma.com/file/K1uGsJv9PKPQoWm2Dcm5FI/UE-1.3-R108-Figma-2.-Guide-de-style-(Copy)?type=design&node-id=1%3A668&mode=design&t=HwSlAwKYzfcSmSDh-1
 
 # Structure de départ pour le projet individuel.
 
