@@ -1,14 +1,13 @@
 .contact {
-    background-color: var(--gray);
     border: none;
 }
 
 .label__name {
     display: block;
-    padding-bottom: 2px;
+    padding-bottom: 20px;
     margin-bottom: 5px;
     border-bottom: 2px solid var(--black);
-    margin-top: var(--space1x);
+    margin-top: 40px;
     margin-left: var(--space1x);
     margin-right: var(--space1x);
 }
