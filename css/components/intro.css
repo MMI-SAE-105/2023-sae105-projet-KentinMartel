@@ -85,6 +85,11 @@
     line-height: 150%;
 }
 
+.projetslignes a {
+    text-decoration: none;
+    color: black;
+}
+
 .img-oeuvre {
     margin-left: var(--space2x);
     margin-right: var(--space2x);
