@@ -1,13 +1,16 @@
 .title {
+    position: relative;
+    z-index: 1;
     font-size: var(--title);
-    font-family: var(--niramit);
+    font-family: var(--staatliches);
     font-weight: 500;
     color: var(--gris-noir);
     text-align: center;
-    margin-top: var(--space1x);
+    margin-top: -600px;
     margin-bottom: var(--space1x);
     margin-left: var(--space1x);
     margin-right: var(--space1x);
+    padding-bottom: 500px;
 }
 
 .image-oeuvre {
@@ -16,6 +19,13 @@
     align-items: center;
     margin-left: 30px
 }
+
+.affiche {
+    z-index: -1;
+    position: absolute;
+    display: flex;
+}
+
 
 .intro__text {
     font-size: var(--sous-titre);
