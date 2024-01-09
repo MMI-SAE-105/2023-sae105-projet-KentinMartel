@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
 
-</html>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,121 +14,118 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
-<div class="color">
-
-
-    <body>
-        <div class="header">
-            <header class="active">
-                <a href="/fr/index.html"> <img class="logo-header" src="/src/assets/icones/curry-brand-3m 1.png"
-                        alt="logo"></a>
-
-                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__title">
-                    <img class="back__menu" x-show="menuIsOpen" src="/src/assets/icones/menu-closed.png" alt="">
-                    <img class="menu-burger" x-show="!menuIsOpen" src="/src/assets/icones/menu-open.png" alt="">
-                </button>
-                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
-                    <ul menu__ul>
-                        <li class="menu__item"><a class='menu__link' href='/fr/film.html'>Underrated, Le film</a></li>
-                        <li class="menu__item"><a class='menu__link' href='/fr/citation.html'>Citation Inspirante de
-                                Curry</a></li>
-                        <li class="menu__item"><a class='menu__link' href='/fr/musique.html'>Musique & Basket</a></li>
-                        <li class="menu__item"><a class='menu__link' href='/en/realisateur.html'>Réalisateur du film</a>
-                        <li class="menu__item"><a class='menu__link' href='/en/livre.html'>Livre sur Curry</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+<body>
+    <header class="active">
+        <div class="navbar">
+            <a href="/fr/index.html"> <img class="logo-header" src="/src/assets/icones/curry-brand-3m 1.png"
+                    alt="logo"></a>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__title"
+                :class="menuIsOpen && 'header__title-open'">
+                <span class="header__title-line line1"></span>
+                <span class="header__title-line line2"></span>
+                <span class="header__title-line line3"></span>
+            </button>
         </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
+            <ul class="menu__items">
+                <li class="menu__item"><a class='menu__link' href='/fr/film.html'>Underrated, Le film</a></li>
+                <li class="menu__item"><a class='menu__link' href='/fr/citation.html'>Citation Inspirante de
+                        Curry</a></li>
+                <li class="menu__item"><a class='menu__link' href='/fr/musique.html'>Musique & Basket</a></li>
+                <li class="menu__item"><a class='menu__link' href='/en/realisateur.html'>Réalisateur du film</a>
+                <li class="menu__item"><a class='menu__link' href='/en/livre.html'>Livre sur Curry</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="intro">
-            <img class="Affiche" src="/src/assets/img/sterp 1.png" alt="Image 2">
-            <p class="legende">Underrated - Affiche</p>
-        </div>
-        <div class="intro">
-            <main>
-                <h2 class="titre">UNDERRATED, LE film</h2>
-                <p class="texte-courant">Stephen Curry : Du Campus Universitaire à la Gloire de la NBA
+    <div class="intro">
+        <img class="Affiche" src="/src/assets/img/sterp 1.png" alt="Image 2">
+        <p class="legende">Underrated - Affiche</p>
 
-                    La carrière sportive de Stephen Curry est un conte de fées moderne qui a débuté sur les campus
-                    universitaires avant de
-                    s'épanouir dans la prestigieuse National Basketball Association (NBA).
-                    De ses années universitaires exceptionnelles à son ascension fulgurante en tant que superstar de la
-                    NBA, l'histoire de
-                    Stephen Curry est une source d'inspiration pour de nombreux fans de basketball et une démonstration
-                    de détermination, de
-                    travail acharné et de talent brut.
-                    Stephen Curry a fait ses débuts universitaires en 2006 en rejoignant l'Université de Davidson en
-                    Caroline du Nord. À
-                    l'époque, il n'était pas le choix le plus en vue des recruteurs, mais il allait rapidement changer
-                    la donne.</p>
+        <main>
+            <h2 class="titre">UNDERRATED, LE film</h2>
+            <p class="texte-courant">Stephen Curry : Du Campus Universitaire à la Gloire de la NBA
 
-
-                <img class="image-5" src="/src/assets/img/image 5.jpg" alt="Image 6">
-
-
-                <p class="texte-courant">Lors de sa première année, Curry a immédiatement montré des signes de son
-                    talent exceptionnel en tant que shooteur hors
-                    pair. Il a été nommé Freshman All-American et a contribué de manière significative à l'ascension de
-                    l'équipe de Davidson
-                    en NCAA.
-                    Cependant, c'est lors de sa deuxième année que Curry a véritablement explosé. Il a mené la nation en
-                    termes de points
-                    marqués par match et a propulsé Davidson dans le Final Four du tournoi NCAA, une réalisation qui a
-                    attiré l'attention
-                    nationale.
-                    Son tir à trois points mortel et sa capacité à marquer de n'importe où sur le terrain étaient déjà
-                    sa marque de
-                    fabrique.
-                    Après deux saisons remarquables à Davidson, Curry a fait le saut vers la NBA en 2009, où il a été
-                    sélectionné par les
-                    Golden State Warriors en septième position lors de la draft.</p>
-
-                <img class="image-5" src="/src/assets/img/image 7.jpg" alt="Image 7">
-
-                <p class="texte-courant">spectaculaires qui ont révolutionné le jeu. Il a remporté plusieurs titres de
-                    MVP (Joueur le plus utile) de la NBA et a
-                    aidé les Warriors à remporter de nombreux championnats. Sa combinaison de précision au tir, de
-                    maniabilité et de dribble
-                    magistral lui a permis de devenir l'un des joueurs les plus excitants à regarder de sa génération.
-                    En plus de ses réalisations individuelles et collectives sur le terrain, Stephen Curry est également
-                    salué pour son
-                    leadership et son influence positive en dehors du basketball. Il est un modèle pour les jeunes
-                    athlètes et un
-                    philanthrope engagé, s'impliquant dans des œuvres caritatives et descauses sociales.
-                    En conclusion, la vie sportive de Stephen Curry, depuis son passage sur les campus universitaires
-                    jusqu'à sa carrière
-                    dans la NBA, est une histoire de détermination, de talent brut et de travail acharné. Il a dépassé
-                    les attentes et est
-                    devenu l'une des superstars les plus emblématiques de la NBA.
-                    Son impact sur le jeu de basketball lui assure une place de choix dans l'histoire du sport et son
-                    influence positive en
-                    dehors du terrain est tout aussi remarquable. Stephen Curry est bien plus qu'un joueur de
-                    basketball, c'est une légende
-                    vivante, et son parcours continue d'inspirer des générations de fans à travers le monde.</p>
+                La carrière sportive de Stephen Curry est un conte de fées moderne qui a débuté sur les campus
+                universitaires avant de
+                s'épanouir dans la prestigieuse National Basketball Association (NBA).
+                De ses années universitaires exceptionnelles à son ascension fulgurante en tant que superstar de la
+                NBA, l'histoire de
+                Stephen Curry est une source d'inspiration pour de nombreux fans de basketball et une démonstration
+                de détermination, de
+                travail acharné et de talent brut.
+                Stephen Curry a fait ses débuts universitaires en 2006 en rejoignant l'Université de Davidson en
+                Caroline du Nord. À
+                l'époque, il n'était pas le choix le plus en vue des recruteurs, mais il allait rapidement changer
+                la donne.</p>
 
 
-        </div>
+            <img class="image-5" src="/src/assets/img/image 5.jpg" alt="Image 6">
 
 
-        </main>
+            <p class="texte-courant">Lors de sa première année, Curry a immédiatement montré des signes de son
+                talent exceptionnel en tant que shooteur hors
+                pair. Il a été nommé Freshman All-American et a contribué de manière significative à l'ascension de
+                l'équipe de Davidson
+                en NCAA.
+                Cependant, c'est lors de sa deuxième année que Curry a véritablement explosé. Il a mené la nation en
+                termes de points
+                marqués par match et a propulsé Davidson dans le Final Four du tournoi NCAA, une réalisation qui a
+                attiré l'attention
+                nationale.
+                Son tir à trois points mortel et sa capacité à marquer de n'importe où sur le terrain étaient déjà
+                sa marque de
+                fabrique.
+                Après deux saisons remarquables à Davidson, Curry a fait le saut vers la NBA en 2009, où il a été
+                sélectionné par les
+                Golden State Warriors en septième position lors de la draft.</p>
 
-        <div class="footer">
-            <footer>
-                <div class="footer__centre">
-                    <a class='footer__formulaire' href='formulaire.html'>Contact</a>
-                    <a class='footer__propos' href='propos.html'>A propos</a>
-                    <a class='footer__glossaire' href='glossaire.html'>Glossaire</a>
-                    <a class='footer__projet' href='projets.html'>Autres Projets</a>
+            <img class="image-5" src="/src/assets/img/image 7.jpg" alt="Image 7">
 
-                    <a class="index.html"> <img class="footer__logo" src="/src/assets/icones/curry-brand-3m 1.png"
-                            alt="logo footer"></a>
-                    <p class="footer__copy">&copy; 2023 Underrated</p>
-                    </a>
-                </div>
-            </footer>
-        </div>
-    </body>
+            <p class="texte-courant">spectaculaires qui ont révolutionné le jeu. Il a remporté plusieurs titres de
+                MVP (Joueur le plus utile) de la NBA et a
+                aidé les Warriors à remporter de nombreux championnats. Sa combinaison de précision au tir, de
+                maniabilité et de dribble
+                magistral lui a permis de devenir l'un des joueurs les plus excitants à regarder de sa génération.
+                En plus de ses réalisations individuelles et collectives sur le terrain, Stephen Curry est également
+                salué pour son
+                leadership et son influence positive en dehors du basketball. Il est un modèle pour les jeunes
+                athlètes et un
+                philanthrope engagé, s'impliquant dans des œuvres caritatives et descauses sociales.
+                En conclusion, la vie sportive de Stephen Curry, depuis son passage sur les campus universitaires
+                jusqu'à sa carrière
+                dans la NBA, est une histoire de détermination, de talent brut et de travail acharné. Il a dépassé
+                les attentes et est
+                devenu l'une des superstars les plus emblématiques de la NBA.
+                Son impact sur le jeu de basketball lui assure une place de choix dans l'histoire du sport et son
+                influence positive en
+                dehors du terrain est tout aussi remarquable. Stephen Curry est bien plus qu'un joueur de
+                basketball, c'est une légende
+                vivante, et son parcours continue d'inspirer des générations de fans à travers le monde.</p>
+
+
+    </div>
+
+
+    </main>
+
+    <div class="footer">
+        <footer>
+            <div class="footer__centre">
+                <a class='footer__formulaire' href='formulaire.html'>Contact</a>
+                <a class='footer__propos' href='propos.html'>A propos</a>
+                <a class='footer__glossaire' href='glossaire.html'>Glossaire</a>
+                <a class='footer__projet' href='projets.html'>Autres Projets</a>
+
+                <a class="index.html"> <img class="footer__logo" src="/src/assets/icones/curry-brand-3m 1.png"
+                        alt="logo footer"></a>
+                <p class="footer__copy">&copy; 2023 Underrated</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
 </div>
 
 </html>

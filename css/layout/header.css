@@ -1,10 +1,9 @@
-header {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
 
 }
 
@@ -15,12 +14,46 @@ header {
 }
 
 .header__title {
-    width: 50px;
-    padding-right: 15px;
-    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 7px;
+    height: 20px;
+    background-color: transparent;
     border: none;
 
 }
+
+.header__title-line {
+    width: 24px;
+    height: 4px;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__title-open .line1,
+.header__title-open .line1::before,
+.header__title-open .line1::after {
+    transform: rotate(45deg);
+    transform-origin: 0 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.header__title-open .line2,
+.header__title-open .line2::before,
+.header__title-open .line2::after {
+    transform: scaleY(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.header__title-open .line3,
+.header__title-open .line3::before,
+.header__title-open .line3::after {
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
 
 body,
 html {

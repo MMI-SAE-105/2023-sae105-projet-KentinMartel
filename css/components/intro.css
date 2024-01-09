@@ -1,6 +1,6 @@
 .title {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     font-size: var(--title);
     font-family: var(--staatliches);
     font-weight: 500;
@@ -21,9 +21,8 @@
 }
 
 .affiche {
-    z-index: -1;
+    z-index: -2;
     position: absolute;
-    display: flex;
 }
 
 

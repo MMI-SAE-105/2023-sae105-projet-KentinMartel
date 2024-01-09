@@ -1,16 +1,9 @@
 .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100vw;
     height: 100vh;
-    background: var(--gray);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--gray);
+    z-index: 2;
 }
-
 
 .noscroll,
 .noscroll body {
@@ -25,22 +18,15 @@
     font-family: var(--readex);
 }
 
-.menu__item {
-    list-style: none;
-    padding: 2rem;
+.menu__items {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-right: 37px;
-    background: transparent;
-
-}
-
-.back__menu {
-    position: relative;
-    z-index: 10;
-    background: transparent;
-    width: 20px;
-    border: none;
+    gap: 100px;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 40px;
 }

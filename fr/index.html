@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
 
-</html>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,89 +14,87 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
-<div class="color">
-
-
-    <body>
-        <div class="header">
-            <header class="active">
-                <a href="/fr/index.html"> <img class="logo-header" src="/src/assets/icones/curry-brand-3m 1.png"
-                        alt="logo"></a>
-
-                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__title">
-                    <img class="back__menu" x-show="menuIsOpen" src="/src/assets/icones/menu-closed.png" alt="">
-                    <img class="menu-burger" x-show="!menuIsOpen" src="/src/assets/icones/menu-open.png" alt="">
-                </button>
-                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
-                    <ul menu__ul>
-                        <li class="menu__item"><a class='menu__link' href='/fr/film.html'>Underrated, Le film</a></li>
-                        <li class="menu__item"><a class='menu__link' href='/fr/citation.html'>Citation Inspirante de
-                                Curry</a></li>
-                        <li class="menu__item"><a class='menu__link' href='/fr/musique.html'>Musique & Basket</a></li>
-                        <li class="menu__item"><a class='menu__link' href='/en/realisateur.html'>Réalisateur du film</a>
-                        <li class="menu__item"><a class='menu__link' href='/en/livre.html'>Livre sur Curry</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+<body>
+    <header class="active">
+        <div class="navbar">
+            <a href="/fr/index.html"> <img class="logo-header" src="/src/assets/icones/curry-brand-3m 1.png"
+                    alt="logo"></a>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__title"
+                :class="menuIsOpen && 'header__title-open'">
+                <span class="header__title-line line1"></span>
+                <span class="header__title-line line2"></span>
+                <span class="header__title-line line3"></span>
+            </button>
         </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
+            <ul class="menu__items">
+                <li class="menu__item"><a class='menu__link' href='/fr/film.html'>Underrated, Le film</a></li>
+                <li class="menu__item"><a class='menu__link' href='/fr/citation.html'>Citation Inspirante de
+                        Curry</a></li>
+                <li class="menu__item"><a class='menu__link' href='/fr/musique.html'>Musique & Basket</a></li>
+                <li class="menu__item"><a class='menu__link' href='/en/realisateur.html'>Réalisateur du film</a>
+                <li class="menu__item"><a class='menu__link' href='/en/livre.html'>Livre sur Curry</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
 
-        <figure class="intro">
-                
-            <img class="Affiche" src="/src/assets/img/3162404 1.jpg" alt="Affiche">
-            <quote>
-                    <h1 class="title">“Success is not an accident, success is actually a choice.”</h1>
-                </quote>
-                <figcaption class="legende">Stephen Curry</figcaption>
-            
-            </figure>
-        <div class="intro">
-            <main>
-                
-                <h2 class="titre">Underrated</h2>
-                <p class="texte-courant">Cette citation de Stephen Curry
-                    incarne le pouvoir des choix délibérés dans la
-                    quête du succès. Décryptage inspirant.</p>
-                <img class="image-accueil" src="/src/assets/img/image 1.jpg" alt="Image 1">
-                <p class="texte-courant">Stephen Curry’s quote:</p>
-                <img class="image-accueil" src="/src/assets/img/FU9gTd1WYAAo_7e 1.jpg" alt="Image 2">
-                <p class="texte-courant">La musique "Stay"
-                    résonne comme une bande-son parfaite pour illustrer le parcours de Stephen Curry vers la réussite.
-                </p>
-                <img class="image-accueil" src="/src/assets/img/image 2-1.jpg" alt="Image 3">
-                <p class="texte-courant">Découvrez comment le réalisateur Peter Nicks
-                    donne vie à l'incroyable parcours de Stephen Curry à travers son film captivant.
-                </p>
-                <img class="image-accueil" src="/src/assets/img/image 3.jpg" alt="Image 4">
-                <p class="texte-courant">Le livre Stephen Curry :
-                    La Révolution' dévoile les choix et les défis qui ont forgé la légende du basket-ball.
-                </p>
-                <img class="image-accueil" src="/src/assets/img/image 4.jpg" alt="Image 5">
+    <figure class="intro">
+
+        <img class="Affiche" src="/src/assets/img/3162404 1.jpg" alt="Affiche">
+        <quote>
+            <h1 class="title">“Success is not an accident, success is actually a choice.”</h1>
+        </quote>
+        <figcaption class="legende">Stephen Curry</figcaption>
+
+    </figure>
+    <div class="intro">
+        <main>
+
+            <h2 class="titre">Underrated</h2>
+            <p class="texte-courant">Cette citation de Stephen Curry
+                incarne le pouvoir des choix délibérés dans la
+                quête du succès. Décryptage inspirant.</p>
+            <img class="image-accueil" src="/src/assets/img/image 1.jpg" alt="Image 1">
+            <p class="texte-courant">Stephen Curry’s quote:</p>
+            <img class="image-accueil" src="/src/assets/img/FU9gTd1WYAAo_7e 1.jpg" alt="Image 2">
+            <p class="texte-courant">La musique "Stay"
+                résonne comme une bande-son parfaite pour illustrer le parcours de Stephen Curry vers la réussite.
+            </p>
+            <img class="image-accueil" src="/src/assets/img/image 2-1.jpg" alt="Image 3">
+            <p class="texte-courant">Découvrez comment le réalisateur Peter Nicks
+                donne vie à l'incroyable parcours de Stephen Curry à travers son film captivant.
+            </p>
+            <img class="image-accueil" src="/src/assets/img/image 3.jpg" alt="Image 4">
+            <p class="texte-courant">Le livre Stephen Curry :
+                La Révolution' dévoile les choix et les défis qui ont forgé la légende du basket-ball.
+            </p>
+            <img class="image-accueil" src="/src/assets/img/image 4.jpg" alt="Image 5">
 
 
 
-        </div>
+    </div>
 
 
-        </main>
+    </main>
 
-        <div class="footer">
-            <footer>
-                <div class="footer__centre">
-                    <a class='footer__formulaire' href='formulaire.html'>Contact</a>
-                    <a class='footer__propos' href='propos.html'>A propos</a>
-                    <a class='footer__glossaire' href='glossaire.html'>Glossaire</a>
-                    <a class='footer__projet' href='projets.html'>Autres Projets</a>
+    <div class="footer">
+        <footer>
+            <div class="footer__centre">
+                <a class='footer__formulaire' href='formulaire.html'>Contact</a>
+                <a class='footer__propos' href='propos.html'>A propos</a>
+                <a class='footer__glossaire' href='glossaire.html'>Glossaire</a>
+                <a class='footer__projet' href='projets.html'>Autres Projets</a>
 
-                    <a class="index.html"> <img class="footer__logo" src="/src/assets/icones/curry-brand-3m 1.png"
-                            alt="logo footer"></a>
-                    <p class="footer__copy">&copy; 2023 Underrated</p>
-                    </a>
-                </div>
-            </footer>
-        </div>
-    </body>
-</div>
+                <a class="index.html"> <img class="footer__logo" src="/src/assets/icones/curry-brand-3m 1.png"
+                        alt="logo footer"></a>
+                <p class="footer__copy">&copy; 2023 Underrated</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
 
 </html>

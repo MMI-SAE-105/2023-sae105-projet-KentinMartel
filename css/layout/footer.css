@@ -29,7 +29,7 @@ footer {
 }
 
 
-.footer__billetterie {
+.footer__formulaire {
     font-size: var(--footer);
     color: var(--black);
     font-family: var(--readex);
@@ -41,7 +41,7 @@ footer {
     text-decoration: none;
 }
 
-.footer__contact {
+.footer__propos {
     font-size: var(--footer);
     color: var(--black);
     font-family: var(--readex);
@@ -53,7 +53,19 @@ footer {
     text-decoration: none;
 }
 
-.footer__oeuvres {
+.footer__glossaire {
+    font-size: var(--footer);
+    color: var(--black);
+    font-family: var(--readex);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19px;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.footer__projet {
     font-size: var(--footer);
     color: var(--black);
     font-family: var(--readex);
