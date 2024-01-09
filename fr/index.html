@@ -52,25 +52,91 @@
     <div class="intro">
         <main>
 
+
             <h2 class="titre">Underrated</h2>
-            <p class="texte-courant">Cette citation de Stephen Curry
-                incarne le pouvoir des choix délibérés dans la
-                quête du succès. Décryptage inspirant.</p>
-            <img class="image-accueil" src="/src/assets/img/image 1.jpg" alt="Image 1">
-            <p class="texte-courant">Stephen Curry’s quote:</p>
-            <img class="image-accueil" src="/src/assets/img/FU9gTd1WYAAo_7e 1.jpg" alt="Image 2">
-            <p class="texte-courant">La musique "Stay"
-                résonne comme une bande-son parfaite pour illustrer le parcours de Stephen Curry vers la réussite.
-            </p>
-            <img class="image-accueil" src="/src/assets/img/image 2-1.jpg" alt="Image 3">
-            <p class="texte-courant">Découvrez comment le réalisateur Peter Nicks
-                donne vie à l'incroyable parcours de Stephen Curry à travers son film captivant.
-            </p>
-            <img class="image-accueil" src="/src/assets/img/image 3.jpg" alt="Image 4">
-            <p class="texte-courant">Le livre Stephen Curry :
-                La Révolution' dévoile les choix et les défis qui ont forgé la légende du basket-ball.
-            </p>
-            <img class="image-accueil" src="/src/assets/img/image 4.jpg" alt="Image 5">
+
+            <article>
+
+                <div class="work" x-data="{hrefCourant:'#ecran-1',}">
+                    <button @click="parent = $refs.parent,parent.scrollLeft -= parent.clientWidth"
+                        class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
+                    </button><button @click="parent = $refs.parent,parent.scrollLeft += parent.clientWidth"
+                        class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+                    <div class="carrousel_parent-ecrans" x-ref="parent"
+                        @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+
+
+                        <div id="ecran-1" class="carrousel_ecran">
+                            <a href="/fr/film.html">
+                                <figure>
+                                    <div class="intro">
+                                        <img class=image-slide src="/src/assets/img/Slide 1.png" ,
+                                            alt="Underrated, Le Film">
+                                        <figcaption><a href="film.html" class=texte-courant> Underrated, Le film
+                                        </figcaption>
+                            </a>
+                        </div>
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <a href="/fr/citation.html">
+                            <figure>
+                                <img class=image-slide src="/src/assets/img/Slide 2.jpg" alt="Replique">
+                                <figcaption> <a href="/fr/citation.html" class=texte-courant> La réplique inspirante de
+                                        Stephen Curry
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <a href="/fr/musique.html">
+                            <figure>
+                                <img class=image-slide src="/src/assets/img/slide 3.jpg" alt="Musique">
+                                <figcaption><a href="/fr/musique.html" class="texte-courant"> La musique Stay de Justin
+                                        Bieber
+                                </figcaption>
+                        </a>
+                        <p></p>
+                        </figure>
+                    </div>
+                    <div id="ecran-4" class="carrousel_ecran">
+                        <a href="/en/realisateur.html">
+                            <figure>
+                                <img class=image-slide src="/src/assets/img/slide 4.jpg" alt="Réalisateur">
+                                <figcaption><a href="/en/realisateur.html" class="texte-courant"> Peter Nicks, le
+                                        réalisateur du
+                                        film
+                                </figcaption>
+                        </a>
+                        </figure>
+                    </div>
+                    <div id="ecran-5" class="carrousel_ecran">
+                        <a href="/en/livre.html">
+                            <figure>
+                                <img class=image-slide src="/src/assets/img/slide 5.jpg" alt="Livre">
+                                <figcaption><a href="/en/livre.html" class="texte-courant"> Stephen Curry : La
+                                        révolution
+                                </figcaption>
+                        </a>
+                        </figure>
+                    </div>
+
+
+                </div>
+
+                <ul class="caroussel_liste-liens">
+                    <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a>
+                    </li>
+                    <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a>
+                    </li>
+                    <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a>
+                    </li>
+                    <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien"></a>
+                    </li>
+                    <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien"></a>
+                    </li>
+                </ul>
+            </article>
 
 
 
