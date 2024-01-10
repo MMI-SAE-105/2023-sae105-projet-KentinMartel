@@ -38,46 +38,55 @@
                 </li>
             </ul>
         </nav>
-
         </form>
-        <form action="/fr/glossaire.html" method="get">
-            <input type="hidden" name="lang" value="fr">
+        <form action="/fr/formulaire.html" method="get">
+            <input type="hidden" name="lang" value="en">
             <button class="language-btn" type="submit">EN</button>
         </form>
         </div>
-
     </header>
 
-    <div class="intro">
-        <main>
-            <h2 class="titre">Glossary</h2>
-
-            <img class="image-5" src="/src/assets/img/image 18.jpg" alt="Image 18">
-            <p class="legende">Stephen Curry 2022 Nba Champions</p>
-
-            <p class="texte-courant">
-                NCAA = National Collegiate Athletic Association </p>
-            <p class="texte-courant">
-                MVP = Most Valuable Player (NBA player of the year)</p>
-            <p class="texte-courant">
-                Manta = Sacred formula, short prayer or repeated incantation
-            <p class="texte-courant"> Underrated = Underestimated</p>
-        </main>
-
-
-        <footer>
-            <div class="footer__centre">
-                <a class='footer__formulaire' href='/fr/formulaire.html'>Contact</a>
-                <a class='footer__propos' href='/en/propos.html'>About me</a>
-                <a class='footer__glossaire' href='/en/glossaire.html'>Glossary</a>
-                <a class='footer__projet' href='/en/projets.html'>Other Projets</a>
-
-                <a class="index.html"> <img class="footer__logo" src="/src/assets/icones/curry-brand-3m 1.png"
-                        alt="logo footer"></a>
-                <p class="footer__copy">&copy; 2023 Underrated</p>
-                </a>
+    <main>
+        <section class="contact">
+            <div>
+                <label class="label__name" for="Prénom">Prénom</label>
+                <input type="text" name="first-name" id="first-name" />
             </div>
-        </footer>
+            <div>
+                <label class="label__name" for="Nom">Nom</label>
+                <input type="text" name="last-name" id="last-name" />
+            </div>
+            <div>
+                <label class="label__name" for="E-mail">E-mail</label>
+                <input type="text" name="last-name" id="last-name" />
+            </div>
+            <div>
+                <label class="label__name" for="Objet">Objet</label>
+                <input type="text" name="last-name" id="last-name" />
+            </div>
+            <div>
+                <label class="label__message" for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button class="contact_btn">ENVOYER</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer__centre">
+            <a class='footer__formulaire' href='/fr/formulaire.html'>Contact</a>
+            <a class='footer__propos' href='/en/propos.html'>About me</a>
+            <a class='footer__glossaire' href='/en/glossaire.html'>Glossary</a>
+            <a class='footer__projet' href='/en/projets.html'>Other Projets</a>
+
+            <a class="index.html"> <img class="footer__logo" src="/src/assets/icones/curry-brand-3m 1.png"
+                    alt="logo footer"></a>
+            <p class="footer__copy">&copy; 2023 Underrated</p>
+            </a>
+        </div>
+    </footer>
 
 </body>
 
