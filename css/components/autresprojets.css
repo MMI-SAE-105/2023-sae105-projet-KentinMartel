@@ -22,3 +22,7 @@
     max-width: 50%;
     width: 165px;
 }
+
+.image-radius {
+    border-radius: 15px;
+}
