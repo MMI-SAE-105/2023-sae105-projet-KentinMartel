@@ -17,34 +17,34 @@
 
 <body>
     <header class="active">
-        <div class="navbar">
-            <a href="/fr/index.html"> <img class="logo-header" src="/src/assets/icones/curry-brand-3m 1.png"
-                    alt="logo"></a>
-            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__title"
-                :class="menuIsOpen && 'header__title-open'">
-                <span class="header__title-line line1"></span>
-                <span class="header__title-line line2"></span>
-                <span class="header__title-line line3"></span>
-            </button>
-        </div>
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
-            <ul class="menu__items">
-                <li class="menu__item"><a class='menu__link' href='/en/film.html'>Underrated, the movie</a></li>
-                <li class="menu__item"><a class='menu__link' href='/en/citation.html'>Inspiring Quote by Curry</a></li>
-                <li class="menu__item"><a class='menu__link' href='/en/musique.html'>Music & Basketball</a></li>
-                <li class="menu__item"><a class='menu__link' href='/en/realisateur.html'>Film Director</a>
-                <li class="menu__item"><a class='menu__link' href='/en/livre.html'>Book about Curry</a>
-                </li>
-            </ul>
-        </nav>
+        <div>
+            <div class="navbar">
+                <a href="/fr/index.html"> <img class="logo-header" src="/src/assets/icones/curry-brand-3m 1.png"
+                        alt="logo"></a>
+                <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__title"
+                    :class="menuIsOpen && 'header__title-open'">
+                    <span class="header__title-line line1"></span>
+                    <span class="header__title-line line2"></span>
+                    <span class="header__title-line line3"></span>
+                </button>
+            </div>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
+                <ul class="menu__items">
+                    <li class="menu__item"><a class='menu__link' href='/en/film.html'>Underrated, the movie</a></li>
+                    <li class="menu__item"><a class='menu__link' href='/en/citation.html'>Inspiring Quote by Curry</a>
+                    </li>
+                    <li class="menu__item"><a class='menu__link' href='/en/musique.html'>Music & Basketball</a></li>
+                    <li class="menu__item"><a class='menu__link' href='/en/realisateur.html'>Film Director</a>
+                    <li class="menu__item"><a class='menu__link' href='/en/livre.html'>Book about Curry</a>
+                    </li>
+                </ul>
+            </nav>
 
-        </form>
-        <form action="/fr/index.html" method="get">
-            <input type="hidden" name="lang" value="fr">
-            <button class="language-btn" type="submit">EN</button>
-        </form>
+            <a href="/fr/index.html">
+                <input type="hidden" name="lang" value="fr">
+                <button class="language-btn" type="submit">EN</button>
+            </a>
         </div>
-
 
 
     </header>
