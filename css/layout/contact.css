@@ -4,10 +4,10 @@
 
 .label__name {
     display: block;
-    padding-bottom: 20px;
-    margin-bottom: 5px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
     border-bottom: 2px solid var(--black);
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: var(--space1x);
     margin-right: var(--space1x);
 }
@@ -21,13 +21,13 @@ label {
 }
 
 .contact_btn {
-    background-color: var(--gray);
+    background-color: white;
     color: var(--black);
     font-family: var(--readex);
     border-radius: 15px;
+    border-color: black;
     padding: 30px 20px;
     text-align: center;
-    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
